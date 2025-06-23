@@ -18,4 +18,5 @@ This project shows how to scan a network using nmap to find :
 ## Quick Start
 Run the scan with :
 ```bash
-nmap -T4 -A -v 192.168.129.29
+nmap -sS 192.168.129.0/24 -oN scan_results.txt
+
