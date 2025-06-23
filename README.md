@@ -15,4 +15,7 @@ This project shows how to scan a network using nmap to find :
 -  Network Troubleshooting
 -  Pre Security Audit checks
 
-#### Quick Start
+## Quick Start
+Run the scan with :
+```bash
+nmap -T4 -A -v 192.168.129.29
