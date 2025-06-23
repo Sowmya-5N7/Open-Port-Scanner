@@ -7,3 +7,88 @@
 nmap -sS 192.168.129.0/24 -oN scan_results.txt 
 where ->-sS is TCP SYN Scan which sends SYN Packets to check port status without completing TCP handshake Process.
 -> -oN scan_results.txt is output which saves the results in text format to scan_results.txt
+
+The scan results summary
+
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-06-23 18:22 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 18:22
+Completed Parallel DNS resolution of 1 host. at 18:22, 0.51s elapsed
+Initiating SYN Stealth Scan at 18:22
+Scanning 192.168.129.29 [1000 ports]
+Discovered open port 135/tcp on 192.168.129.29
+Discovered open port 139/tcp on 192.168.129.29
+Discovered open port 445/tcp on 192.168.129.29
+Completed SYN Stealth Scan at 18:22, 0.09s elapsed (1000 total ports)
+Initiating Service scan at 18:22
+Scanning 3 services on 192.168.129.29
+Completed Service scan at 18:22, 6.50s elapsed (3 services on 1 host)
+Initiating OS detection (try #1) against 192.168.129.29
+Retrying OS detection (try #2) against 192.168.129.29
+Retrying OS detection (try #3) against 192.168.129.29
+Retrying OS detection (try #4) against 192.168.129.29
+Retrying OS detection (try #5) against 192.168.129.29
+NSE: Script scanning 192.168.129.29.
+Initiating NSE at 18:22
+Completed NSE at 18:22, 14.28s elapsed
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.03s elapsed
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Nmap scan report for 192.168.129.29
+Host is up (0.00048s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE       VERSION
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.97%E=4%D=6/23%OT=135%CT=1%CU=38382%PV=Y%DS=0%DC=L%G=Y%TM=68594E
+OS:20%P=i686-pc-windows-windows)SEQ(SP=101%GCD=2%ISR=10D%TI=I%CI=I%II=I%SS=
+OS:S%TS=A)SEQ(SP=104%GCD=1%ISR=108%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=104%GCD=
+OS:1%ISR=109%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=104%GCD=1%ISR=10B%TI=I%CI=I%II
+OS:=I%SS=S%TS=A)SEQ(SP=FC%GCD=1%ISR=109%TI=I%CI=I%II=I%SS=S%TS=A)OPS(O1=MFF
+OS:D7NW8ST11%O2=MFFD7NW8ST11%O3=MFFD7NW8NNT11%O4=MFFD7NW8ST11%O5=MFFD7NW8ST
+OS:11%O6=MFFD7ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)ECN(
+OS:R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%
+OS:W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+OS:T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A
+OS:=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D
+OS:F=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=8
+OS:0%CD=Z)
+
+Uptime guess: 0.188 days (since Mon Jun 23 13:51:27 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=252 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-06-23T12:52:35
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+NSE: Script Post-scanning.
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Initiating NSE at 18:22
+Completed NSE at 18:22, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.89 seconds
+           Raw packets sent: 1080 (51.090KB) | Rcvd: 2203 (99.542KB)
+
