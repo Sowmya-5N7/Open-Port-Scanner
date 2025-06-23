@@ -11,8 +11,8 @@ This project shows how to scan a network using nmap to find :
 192.168.129.29 (IPV4 address)
 
 ### Use Cases
--Identify Security risks
--Network Troubleshooting
--Pre Security Audit checks
+-  Identify Security risks
+-  Network Troubleshooting
+-  Pre Security Audit checks
 
 #### Quick Start
