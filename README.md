@@ -1,4 +1,4 @@
-# Open-Port-Scanner using nmap
+# Open-Port-Scanner using Nmap
 
 This project shows how to scan a network using nmap to find :
 -  Open ports and active services
