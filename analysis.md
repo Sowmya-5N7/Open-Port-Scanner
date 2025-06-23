@@ -1,7 +1,7 @@
 ## Scan Overview
 
 
-''bash 
+
 
 
 nmap -sS 192.168.129.0/24 -oN scan_results.txt 
