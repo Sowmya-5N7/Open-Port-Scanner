@@ -1,9 +1,9 @@
 # Open-Port-Scanner using nmap
 
 This project shows how to scan a network using nmap to find :
--Open ports and active services
--Service versions and operating system info
--Possible security risks
+-  Open ports and active services
+-  Service versions and operating system info
+-  Possible security risks
 
 
 ## Target host
